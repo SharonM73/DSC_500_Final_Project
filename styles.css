@@ -1,0 +1,195 @@
+body {
+    background-color: #201832;
+    font-family: Arial, sans-serif;
+    color: rgb(3, 9, 65);
+    text-align: left; /* Changed from center to left */
+    margin-top: 50px;
+    padding-left: 20px; /* Added padding to push content away from the edge */
+}
+
+header {
+    background-color: #201832; /* Lighter purple for a distinct look */
+    padding: 30px 0; /* Increased padding for a bolder appearance */
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; /* Changed to fixed to create its own section at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000;
+    font-weight: bold; /* Bold font for header text */
+}
+
+header .logo {
+    font-size: 25px; /* Increased logo font size for more impact */
+    color: #FFD700; /* Keeping the color for logo text */
+    margin-left: 30px; /* Added margin for spacing from the edge */
+}
+section {
+    background: #ded5fa; 
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+/* Typography */
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+    color: #333; /* Darker text for contrast */
+}
+
+/* Image Styles */
+img {
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.image-caption {
+    font-style: italic;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+}
+
+/* Adjust nav link styles if needed */
+nav a {
+    font-size: 20px; /* Slightly larger font size for navigation links */
+    color: #333; /* Darker color for better readability */
+    margin: 0 15px; /* Increased margin for more space between links */
+}
+
+nav a:hover, nav a.active {
+    color: #FFD700;
+    background-color: transparent;
+    /* Other styles remain the same */
+}
+
+section {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    /* Other styles remain the same */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #673AB7;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #562f97;
+}
+
+#phishingResult {
+    padding: 10px;
+    background-color: #e7e7e7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #673AB7; /* Match header color */
+    color: white;
+    padding: 10px 0;
+    position: fixed; /* Fix the footer */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    body {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    /* Other responsive styles remain the same */
+}
+
+nav a.active {
+    border-bottom: 2px solid #FFD700;
+}
+
+nav a {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: white;
+    background-color: #673AB7;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0%;
+        background-color: #2e2839;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    nav.active {
+        display: flex;
+    }
+}
+
+section {
+    opacity: 0;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    margin-bottom: 40px;
+    margin-top: 80px; /* To compensate for fixed header */
+}
+
+section.active {
+    display: block;
+    opacity: 1;
+}
+

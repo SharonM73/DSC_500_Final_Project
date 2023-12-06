@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Sharon's Data Science Capstone Fall 2023</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Sharon's Data Science Capstone Fall 2023</div>
+        <nav id="mainNav">
+            <a href="#info" onclick="showSection('info')" class="active">Understanding Phishing Threats</a>
+            <a href="#about-detector" onclick="showSection('about-detector')">About Detector</a>
+            <a href="#detector" onclick="showSection('detector')">Detector</a>
+            <a href="#about-me" onclick="showSection('about-me')">About Me</a>
+        </nav>
+    </header>
+
+    <section id="info">
+        <h1><i class="fas fa-info-circle"></i> Understanding Phishing Threats</h1>
+        <h2>What is Phishing?</h2>
+        <p>The issue of website phishing is a major security concern in the digital era. Phishing involves deceptive attempts to obtain sensitive information by disguising as a trustworthy entity in digital communication.</p>
+        
+        <h2>Why Does This Project Matter?</h2>
+        <p>A Forbes report noted that in 2022, the United States faced over 500 million phishing attacks, affecting more than 300,000 people and resulting in financial losses exceeding $52 million.</p>
+        
+        <h2>The Risk in Everyday Transactions</h2>
+        <p>Online activities like shopping on platforms like Amazon and using credit cards daily can expose users to vulnerabilities, especially the elderly who may struggle with verifying the authenticity of websites.</p>
+        
+        <h2>The Goal</h2>
+        <p>To combat phishing, this project aims to create a machine learning model trained to recognize key characteristics of authentic websites, thus identifying sites as phishing, suspicious, or legitimate.</p>
+        
+        <img src="phishing.png" alt="Phishing Awareness Image" style="max-width: 100%; height: auto;">
+        <p class="image-caption">Fun Visual representation of a phishing threat.</p>
+    </section>
+
+
+    <section id="about-detector">
+        <h1><i class="fas fa-search"></i> How Our Detector Works</h1>
+        <img src="poster.png" alt="" style="max-width: 100%; height: auto;">
+    </section>
+
+    <section id="detector">
+        <h1><i class="fas fa-shield-alt"></i> Phishing Website Detector</h1>
+        <p>Please be aware that the results provided by this tool are not definitive and may not 
+            always be accurate. It is important to use this information with caution, and 
+            consider it as one of many factors in your decision-making process. 
+            Always verify and cross-check information for the most reliable outcome.</p>
+        <form id="phishingCheckForm">
+            <label for="link">Enter link you would like to verify:</label>
+            <input type="text" id="link" name="link">
+            <input type="submit" value="Submit">
+        </form>
+        <div id="phishingResult">Result will be displayed here</div>
+    </section>
+
+    <section id="about-me">
+        <img src="Sharon picture.png" alt="" style="max-width: 100%; height: auto;">
+        <h1><i class="fas fa-user"></i> About Me</h1>
+        <p>Hello! My name is Sharon Mega. I am a senior majoring in Data Science and 
+            double minoring in Mathematics and African and African American Studies. 
+            I have recently developed a passion for cybersecurity and data security 
+            hence my decision to do this project. Welcome to my journey, 
+            if you want to see other projects I've done, 
+            here is a link to
+             my <a href="https://github.com/SharonM73/DSC_500-Poster-Presentation" 
+             target="_blank">GitHub</a>.</p>
+        <h2> Don't forget to be kind to yourself today!</h2>
+    </section>
+    
+</body>
+</html>
